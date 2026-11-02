@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/dash.css">
+    <title>DashBoard</title>
+</head>
+
+<body>
+    <button class="menu-bar" id="menubar">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="side-bar" id="sidebar">
+        <h2 class="logo"><i class="fa-solid fa-gift"></i> Giftly</h2>
+        <nav class="menu">
+            <a href="#dashboard" class="menu-item">
+                <i class="fa-solid fa-house"></i> Dashboard</a>
+
+            <a href="#gifts" class="menu-item">
+                <i class="fa-solid fa-gift"></i>All Gifts</a>
+
+            <a href="#orders" class="menu-item">
+                <i class="fa-solid fa-box"></i>Orders</a>
+
+            <a href="#customers" class="menu-item">
+                <i class="fa-solid fa-users"></i> Customers</a>
+
+            <a href="#reviews" class="menu-item">
+                <i class="fa-solid fa-star"></i>Reviews</a>
+
+            <a href="../index.html" class="menu-item">
+                <i class="fa-solid fa-arrow-left"></i><span>Back to Website</span></a>
+        </nav>
+    </div>
+    <main>
+        <section id="dashboard">
+            <div class="section-head">
+                <div>
+                    <h2>Welcome back, Admin on Giftly<i class="fa-solid fa-heart"></i></h2>
+                    <p>Here's what's happening with your store today.</p>
+                </div>
+            </div>
+            <div class="dash-overview">
+                <div class="dash-card">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <div class="text">
+                        <h4>Total Revenue</h4>
+                        <p> 12200 EGP</p>
+                    </div>
+                </div>
+                <div class="dash-card">
+                    <i class="fa-solid fa-box"></i>
+                    <div class="text">
+                        <h4>Total Orders</h4>
+                        <p>7</p>
+                    </div>
+                </div>
+                <div class="dash-card">
+                    <i class="fa-solid fa-gift"></i>
+                    <div class="text">
+                        <h4>All Gifts</h4>
+                        <p>12</p>
+                    </div>
+                </div>
+                <div class="dash-card">
+                    <i class="fa-solid fa-users"></i>
+                    <div class="text">
+                        <h4>Customers</h4>
+                        <p>6</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-content">
+                <div class="section-head">
+                    <h2>Recent Orders</h2>
+                </div>
+                <table>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Items</th>
+                        <th>Total</th>
+                        <th>status</th>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Nada</td>
+                        <td>2 items</td>
+                        <td>1000 EGP</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Nour</td>
+                        <td>5 items</td>
+                        <td>2000 EGP</td>
+                        <td><span class="status pending">Shipped</span></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Asmaa</td>
+                        <td>3 items</td>
+                        <td>1200 EGP</td>
+                        <td><span class="status shipped">Shipped</span></td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </section>
+
+        <section id="gifts">
+            <div class="section-head">
+                <div>
+                    <h2>All Gifts</h2>
+                    <p>Manage your gifts.</p>
+                </div>
+                <button class="add-btn" id="addProductBtn"><i class="fa-solid fa-plus"></i>
+                    Add Product</button>
+            </div>
+            <div class="section-content">
+                <table id="giftstable">
+                    <tr>
+                        <th>Gift-Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Count-In-Stock</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>Cute Box</td>
+                        <td>Women</td>
+                        <td>1200 EGP</td>
+                        <td>10</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Browen Box</td>
+                        <td>Women</td>
+                        <td>1800 EGP</td>
+                        <td>5</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Blue Bag</td>
+                        <td>Women</td>
+                        <td>800 EGP</td>
+                        <td>2</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Classic Gift</td>
+                        <td>Men</td>
+                        <td>1600 EGP</td>
+                        <td>10</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Grey Box</td>
+                        <td>Men</td>
+                        <td>2500 EGP</td>
+                        <td>5</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Perfume</td>
+                        <td>Men</td>
+                        <td>800 EGP</td>
+                        <td>3</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>School Box</td>
+                        <td>Boy Child</td>
+                        <td>1300 EGP</td>
+                        <td>10</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Spider Man Box</td>
+                        <td>Boy Child</td>
+                        <td>1300 EGP</td>
+                        <td>5</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Small Cars box</td>
+                        <td>Boy Child</td>
+                        <td>700 EGP</td>
+                        <td>12</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Purple Box</td>
+                        <td>Girl Child</td>
+                        <td>1100 EGP</td>
+                        <td>10</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pink Box</td>
+                        <td>Girl Child</td>
+                        <td>2000 EGP</td>
+                        <td>5</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Barbie Toy</td>
+                        <td>Girl Child</td>
+                        <td>400 EGP</td>
+                        <td>3</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="orders">
+            <div class="section-head">
+                <h2>Orders </h2>
+                <p>Manage customer orders.</p>
+            </div>
+            <div class="section-content">
+                <table>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Items</th>
+                        <th>Total</th>
+                        <th>status</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Nada</td>
+                        <td>4 items</td>
+                        <td>3000 EGP</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Donia</td>
+                        <td>3 items</td>
+                        <td>1500 EGP</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nabil</td>
+                        <td>2 items</td>
+                        <td>1000 EGP</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Mohamed</td>
+                        <td>4 items</td>
+                        <td>2500 EGP</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Nada</td>
+                        <td>2 items</td>
+                        <td>1000 EGP</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Nour</td>
+                        <td>5 items</td>
+                        <td>2000 EGP</td>
+                        <td><span class="status pending">Shipped</span></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Asmaa</td>
+                        <td>3 items</td>
+                        <td>1200 EGP</td>
+                        <td><span class="status shipped">Shipped</span></td>
+                    </tr>
+                </table>
+
+            </div>
+        </section>
+
+        <section id="customers">
+            <div class="section-head">
+                <h2>Customers</h2>
+                <p>View your customers.</p>
+            </div>
+            <div class="section-content">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Count-Orders</th>
+                        <th>Total-Spent</th>
+                    </tr>
+
+                    <tr>
+                        <td>Nada</td>
+                        <td>nada@gmail.com</td>
+                        <td>2</td>
+                        <td>4000 EGP</td>
+                    </tr>
+                    <tr>
+                        <td>Donia</td>
+                        <td>dodo@gmail.com</td>
+                        <td>1</td>
+                        <td>1500 EGP</td>
+                    </tr>
+                    <tr>
+                        <td>Nabil</td>
+                        <td>bolbol@gmail.com</td>
+                        <td>1</td>
+                        <td>1000 EGP</td>
+                    </tr>
+                    <tr>
+                        <td>Mohamed</td>
+                        <td>mody@gmail.com</td>
+                        <td>1</td>
+                        <td>2500 EGP</td>
+                    </tr>
+                    <tr>
+                        <td>Nour</td>
+                        <td>nono@gmail.com</td>
+                        <td>1</td>
+                        <td>2000 EGP</td>
+                    </tr>
+                    <tr>
+                        <td>Asmaa</td>
+                        <td>soso@gmail.com</td>
+                        <td>1</td>
+                        <td>1200 EGP</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <div class="section-head">
+                <h2>Reviews </h2>
+                <p>Customer reviews.</p>
+            </div>
+            <div class="review-content">
+                <div class="review-card">
+                    <div class="info-text">
+                        <h3>Nada Nabil</h3>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p>Very nice packaging and good quality.</p>
+                </div>
+                <div class="review-card">
+                    <div class="info-text">
+                        <h3>Donia</h3>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p>The gift box was beautifully packed</p>
+                </div>
+                <div class="review-card">
+                    <div class="info-text">
+                        <h3>Nour</h3>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p>I loved the quality of the products</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add Product Modal -->
+    <div class="modal-overlay" id="productModal">
+        <div class="product-modal">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <h2>Add New Gift</h2>
+            <p>Enter the gift information below</p>
+            <form id="productForm">
+                <div class="form-group">
+                    <label>Gift Name</label>
+                    <input type="text" id="giftName" placeholder="Enter gift name" required>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="giftCategory" required>
+                        <option value="">Select Category</option>
+                        <option value="Women">Women</option>
+                        <option value="Men">Men</option>
+                        <option value="Children">Children</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Gift Image</label>
+                    <input type="file" id="giftImage" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label>Price</label>
+                    <input type="number" id="giftPrice" placeholder="Enter price" required min="1">
+                </div>
+                <div class="form-group">
+                    <label>Count in Stock</label>
+                    <input type="number" id="giftStock" placeholder="Enter stock count" required min="1">
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="cancel-btn" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="save-btn">Add Gift</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/dash.js"></script>
+</body>
+
+</html>

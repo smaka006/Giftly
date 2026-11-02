@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link bootstrap and font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/nav-foot.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Giftly</title>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="fa-solid fa-bars"></label>
+        <p id="logo"><a href=""><i class="fa-solid fa-gift"></i> Giftly</a></p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="../Giftly/html/dashboard.html#dashboard" id="dashboard">DashBoard</a></li>
+                <li><a href="#about">AboutUs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="html/allgift.html">AllGifts</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="html/allgift.html#women-gifts">Women</a></li>
+                        <li><a class="dropdown-item" href="html/allgift.html#men-gifts">Men</a></li>
+                        <li><a class="dropdown-item" href="html/allgift.html#children-gifts">Children</a></li>
+                        <li><a class="dropdown-item" href="html/categories.html">AllCategories</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="html/login.html" class="fa-solid fa-user"></a>
+            <div class="cart-icon">
+                <a href="html/cart.html" class="fa-solid fa-cart-shopping"></a>
+                <span class="cart-count">0</span>
+            </div> 
+        </div>
+    </header>
+    <main>
+        <section id="home" class="py-5">
+            <div class="container">
+                <div class="content">
+                    <div class="text">
+                        <h1>Giftly HelperWebsite</h1>
+                        <h3>Find The Perfect Gift</h3><br>
+                        <p>Gifts That Feel Personal.<br>Made for moments, chosen with love.</p>
+                    </div>
+                    <a href="html/allgift.html" class="shop-btn">Shop Now</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container h-50">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-6">
+                        <div class="about-content">
+                            <h2>About Giftly</h2>
+                            <h3>Making Every Moment <span>Special</span></h3>
+
+                            <p>At Giftly, we believe that gifts are more than just things, they are a way to show love,
+                                appreciation, and care.</p>
+
+                            <p>We created Giftly to make choosing the perfect gift easier and more enjoyable. Whether
+                                it's a birthday, graduation, anniversary,
+                                wedding, or just a little surprise, we're here to help you find something special. </p>
+                            <p class="about-bold">Because every occasion has a story, and every story deserves a
+                                beautiful gift.</p>
+                            <a href="html/allgift.html" class="about-btn">Explore Gifts</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/aboutimg.jpg" alt="aboutimg" class="w-100">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="gift-collection" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2><i class="fa-solid fa-fire"></i>Our Best Seller Boxs<i class="fa-solid fa-fire"></i></h2>
+                        <div id="giftCarousel" class="carousel slide">
+                            <div class="carousel-inner" id="giftCarouselInner">
+                                <div class="carousel-item active">
+                                    <div class="gift-card ps-3 pe-3">
+                                        <div class="image-container">
+                                            <img src="img/giftboxmen1.jpg" alt="Giftbox">
+                                        </div>
+                                        <p class="price">1,600 EGP</p>
+                                        <p class="card-category">For Men</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ps-3 pe-3">
+                                    <div class="gift-card">
+                                        <div class="image-container">
+                                            <img src="img/giftboxboy1.jpg" alt="Giftbox">
+                                        </div>
+                                        <p class="price">1,300 EGP</p>
+                                        <p class="card-category">For Boy Child</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ps-3 pe-3">
+                                    <div class="gift-card">
+                                        <div class="image-container">
+                                            <img src="img/giftboxwomen1.jpg" alt="Giftbox">
+                                        </div>
+                                        <p class="price">1,200 EGP</p>
+                                        <p class="card-category">For Women</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ps-3 pe-3">
+                                    <div class="gift-card">
+                                        <div class="image-container">
+                                            <img src="img/giftboxgirl1.jpg" alt="Giftbox">
+                                        </div>
+                                        <p class="price">1,100 EGP</p>
+                                        <p class="card-category">For Girl Child</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ps-3 pe-3">
+                                    <div class="gift-card">
+                                        <div class="image-container">
+                                            <img src="img/giftboxwomen2.jpg" alt="Giftbox">
+                                        </div>
+                                        <p class="price">1,800 EGP</p>
+                                        <p class="card-category">For Women</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ps-3 pe-3">
+                                    <div class="gift-card">
+                                        <div class="image-container">
+                                            <img src="img/giftboxgirl2.jpg" alt="Giftbox">
+                                        </div>
+                                        <p class="price">2,000 EGP</p>
+                                        <p class="card-category">For Girl Child</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ps-3 pe-3">
+                                    <div class="gift-card">
+                                        <div class="image-container">
+                                            <img src="img/giftboxmen2.jpg" alt="Giftbox">
+                                        </div>
+                                        <p class="price">2,500 EGP</p>
+                                        <p class="card-category">For Men</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ps-3 pe-3">
+                                    <div class="gift-card">
+                                        <div class="image-container">
+                                            <img src="img/giftboxboy2.jpg" alt="Giftbox">
+                                        </div>
+                                        <p class="price">1,300 EGP</p>
+                                        <p class="card-category">For Boy Child</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev opacity-100" type="button"
+                                data-bs-target="#giftCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon rounded-circle"></span>
+                            </button>
+
+                            <button class="carousel-control-next opacity-100" type="button"
+                                data-bs-target="#giftCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon rounded-circle"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="best-seller-info">
+                            <p class="title">Our Collection</p>
+                            <h5>Our Best Seller Boxes</h5>
+                            <p>
+                                Discover our most loved gift boxes, carefully selected to make
+                                every occasion extra special. From elegant gifts for women and
+                                men to adorable boxes for little ones, there's something for
+                                everyone.
+                            </p>
+                            <a href="html/allgift.html" class="about-btn">Explore Gifts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <h2>Contact Us</h2>
+                    <div class="col-md-6">
+                        <div class="contact-form">
+                            <form id="contactForm">
+                                <label for="name">Name</label>
+                                <input type="text" placeholder="Enter Name" id="name" class="form-control">
+                                <label for="phone">Phone</label>
+                                <input type="text" placeholder="Phone" id="phone" class="form-control">
+                                <label for="gmail">Gmail</label>
+                                <input type="email" placeholder="Enter Gmail" id="gmail" class="form-control">
+                                <label for="Textarea">Message</label>
+                                <textarea id="Textarea" placeholder="Write your message..." class="form-control"
+                                    rows="3"></textarea>
+                                <input class="form-btn" type="submit" value="Send Message">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <h3 class="contact-info">Our Information</h3>
+                            <div class="col-6 col-lg-6">
+                                <div class="contact-card">
+                                    <i class="fa-solid fa-location-pin"></i>
+                                    <h5>Our Location</h5>
+                                    <p>Cairo Giza</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6">
+                                <div class="contact-card">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <h5>Call Us </h5>
+                                    <p>+20 100 000 0000</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6">
+                                <div class="contact-card">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <h5> Email Us</h5>
+                                    <p>giftly@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6">
+                                <div class="contact-card">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <h5>Whatsapp</h5>
+                                    <p>028567----</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="foot-1">
+                        <h2>Giftly <i class="fa-solid fa-gift"></i></h2>
+                        <p>Making every moment special with the perfect gift. Find something beautiful for everyone you
+                            love.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="foot-2">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#gift-collection">Best Sellers</a></li>
+                            <li><a href="html/allgift.html">All Gifts</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="foot-3 mb-5">
+                        <h3>Our Social Media</h3>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <p class="team-link">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href="../Giftly/html/Teamwork.html">Meet Our Team</a>
+                        </p>
+                    </div>
+                    <p class="pt-3">&copy; 2026 Giftly. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
